@@ -18,6 +18,7 @@ datm <- mydata %>%
 my_colors <- RColorBrewer::brewer.pal(4, "Set1")[3:2]
 
 
+
 # Stacked + percent
 ggplot(datm, aes(fill=ind, y=value, x=variable)) + 
   geom_bar(position="fill", stat="identity")  + guides(fill=guide_legend(title=('')))  +
