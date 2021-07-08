@@ -25,3 +25,4 @@ ggplot(datm, aes(fill=ind, y=value, x=variable)) +
         legend.text = element_text(size = (12), face = "bold"), legend.title = element_text(size = (12), face = "bold")) + 
    scale_y_continuous(labels = scales::percent_format()) + xlab("Patients") + scale_fill_manual(values = my_colors, labels = c("Persisting clones", "New clones")) +
   ylab("IgG+ MB cell repertoire")  #scale_colour_steps()  #scale_fill_discrete(labels = c("New Clones", "Persisted Clones")) #For different color> scale_fill_viridis(discrete = T) 
+
